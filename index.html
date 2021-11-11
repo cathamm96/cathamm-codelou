@@ -1,8 +1,82 @@
 <html>
+    
+<link href="main.css" rel="stylesheet">
+<script src="javascript/form.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+
     <head>
 
+        <div class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#updates">updates</a>
+            <a href="contact">contact</a>
+        </div>
+
     </head>
+    
     <body>
-        Hello World!
+
+        <div class="container">
+            <img src="images/catlogo.png" alt="cat logo" class="logo">   
+            <div class="title-block">
+                <h1>cats from cat</h1>
+                <h2>insert funky tagline here</h2>
+            </div>
+        </div>
+
+        <h3><b>AVAILABLE FOR ADOPTION</b></h3>
+
+        <div class="flex-container">
+            <div class="photos">
+                <img src="images/kitten.jpeg" alt="kitten">
+                <img src="images/kitten1.jpeg" alt="kitten1">
+                <img src="images/kitten2.jpeg" alt="kitten2">
+            </div>
+            <div class="description">
+                <p>hello i am kitten 1</p>
+                <p>hello i am kitten 2</p>
+                <p>hello i am kitten 3</p>
+            </div>
+        </div>
+
+        <h4>want to reach us?</h4>
+
+        <form name="submitform" onsubmit="return validateForm()" method="post" class="form">
+            <div class="fname">
+            <label for="fname">first name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="name"><br>
+            </div>
+
+            <div class="lname">
+            <label for ="lname">last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="last name"><br>
+            </div>
+
+            <div class="email">
+            <label for="email">email:</label><br>
+            <input type="email" id="email" name="email" placeholder="email"><br>
+            </div>
+
+            <div class="message">
+            <label for ="message">subject</label><br>
+            <input type="text" id="message" name="message" placeholder="talk to us"><br>
+            </div>
+
+            <div class="button">
+            <input type="submit" value="submit">
+            </div>
+        </form>
+   
+        
+
     </body>
+
+    <footer>
+
+
+    </footer>
+
 </html>

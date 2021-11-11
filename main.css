@@ -1,0 +1,131 @@
+.navbar {
+    background-color: black;
+    font-size: 20px;
+    font-style: #ffffff;
+    text-align: right;
+    padding: 10px;
+    font-family:'Quicksand', 'sans-serif';
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 6px;
+}
+
+.container {
+    position: relative;
+}
+
+.title-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    top: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.image {
+    position: relative;
+    height: 800px;
+    width: 400px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+h1 {
+    font-size: 150px;
+    text-align: center;
+    color:rgb(114, 79, 241);
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Sacramento', cursive;
+   }
+
+h2 {
+    font-size: 28px;
+    color:rgb(152, 137, 207);
+    margin-top: -60px;
+    margin-bottom: 50px;
+    padding-left: 280px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+    font-size: 36px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    font-family: 'Quicksand', sans-serif;
+    gap: 175px;
+    margin-right: 50px;
+}
+
+h4 {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form {
+    width: 300px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20;
+    border-style: solid;
+    border-width: 1px;
+    padding: 18px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+input {
+    padding: 6px;
+    width: 300px;
+}
+
+.fname {
+    padding-bottom: 10px;
+}
+
+.lname {
+    padding-bottom: 10px;
+}
+
+.email {
+    padding-bottom: 10px;
+}
+
+.message {
+    padding-bottom: 10px;
+}
+
+.button {
+    padding-top: 15px;
+}
