@@ -5,16 +5,21 @@
     text-align: right;
     padding: 10px;
     font-family:'Quicksand', 'sans-serif';
+    position:fixed;
+    top: 0;
+    width: 96%;
 }
 
 a {
     color: white;
     text-decoration: none;
     margin: 6px;
+    
 }
 
 .container {
     position: relative;
+    margin-top: 50px;
 }
 
 .title-block {
@@ -43,7 +48,7 @@ a {
 h1 {
     font-size: 150px;
     text-align: center;
-    color:rgb(114, 79, 241);
+    color:rgb(92, 72, 173);
     margin-bottom: 0;
     margin-top: 0;
     font-family: 'Sacramento', cursive;
@@ -65,31 +70,58 @@ h3 {
     font-family: 'Quicksand', sans-serif;
 }
 
-.flex-container {
+.outer {
     display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    margin-left: 3%;   
 }
 
-.photos {
+.row {
+    border: 1px;
     display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-left: 50px;
-    width: 300px;
+    flex: 1;
 }
 
-.description {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
+.flex-item {
+    flex: 1;
     font-family: 'Quicksand', sans-serif;
-    gap: 175px;
-    margin-right: 50px;
+}
+
+.kitpic {
+    max-width: 350px
+}
+
+.button1 {
+    font-family: 'Quicksand', sans-serif;
+    width: 100px;
+    margin-left: 40px;
+}
+
+.button2 {
+    font-family: 'Quicksand', sans-serif;
+    width: 100px;
+    margin-left: 40px;
+}
+
+.button3 {
+    font-family: 'Quicksand', sans-serif;
+    width: 100px;
+    margin-left: 40px;
+}
+
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+
+p {
+    margin-left: 40px;
 }
 
 h4 {
-    margin-top: 80px;
-    margin-bottom: 10px;
-    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    text-align: center;
     font-size: 24px;
     font-family: 'Quicksand', sans-serif;
 }
@@ -103,6 +135,7 @@ h4 {
     padding: 18px;
     margin: auto;
     margin-bottom: 100px;
+    
 }
 
 input {
@@ -128,4 +161,84 @@ input {
 
 .button {
     padding-top: 15px;
+}
+
+.mapbox {
+    background-color: rgb(152, 137, 207);
+}
+.map {
+    background-color: rgb(152, 137, 207);
+    text-align: center;
+    align-content: center;
+    padding: 75px; 
+    width: 80%;
+}
+
+.fab {
+    width: 80px;
+    font-size: 50px;
+    color: rgb(128, 128, 128);
+    text-align: center;
+    text-decoration: none;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.socials {
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+   h2 {
+       margin-left: 200px;
+   }
+   .outer {
+       flex-direction: row;
+       justify-content: center;
+   }
+   .row {
+       flex-direction: column;
+       max-height: 100px;
+   }
+   .map {
+       width: 86%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+   .kitpic {
+       max-width: 500px;
+   }
+   .flex-item {
+       font-size: 20px;
+       text-align: center;
+   }
+   .outer {
+       margin-left: 0;
+   }
+   .map {
+       width: 180%;
+   }
+   .form { 
+       width: 600px;
+       background-color: white;
+       margin-right: 150px;
+   }
+   input {
+       width: 600px;
+   }
+   .contact {
+       display: flex;
+       background-color: rgb(152, 137, 207);
+   }
+   h2 {
+       margin-left: 520px;
+   }
 }
