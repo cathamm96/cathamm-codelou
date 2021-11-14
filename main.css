@@ -1,20 +1,21 @@
 .navbar {
     background-color: black;
-    font-size: 20px;
+    font-size: 14px;
     font-style: #ffffff;
     text-align: right;
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family:'Quicksand', 'sans-serif';
     position:fixed;
     top: 0;
-    width: 96%;
+    width: 100%;
 }
 
 a {
     color: white;
     text-decoration: none;
     margin: 6px;
-    
+    padding-right: 10px;
 }
 
 .container {
@@ -34,37 +35,36 @@ a {
 
 .image {
     position: relative;
-    height: 800px;
-    width: 400px;
+    width: 100px;
 }
 
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 300px;
 }
 
 h1 {
-    font-size: 150px;
+    font-size: 69px;
     text-align: center;
     color:rgb(92, 72, 173);
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: -30;
     font-family: 'Sacramento', cursive;
    }
 
 h2 {
-    font-size: 28px;
+    font-size: 18px;
     color:rgb(152, 137, 207);
-    margin-top: -60px;
+    margin-top: -30px;
     margin-bottom: 50px;
-    padding-left: 280px;
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 24px;
     padding-top: 30px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
@@ -72,24 +72,19 @@ h3 {
 
 .outer {
     display: flex;
-    min-height: 100%;
-    flex-direction: column;
-    margin-left: 3%;   
-}
-
-.row {
-    border: 1px;
-    display: flex;
-    flex: 1;
+    flex-direction: column;  
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .flex-item {
-    flex: 1;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-height: 300px;
+    margin-bottom: 140px;
     font-family: 'Quicksand', sans-serif;
-}
-
-.kitpic {
-    max-width: 350px
 }
 
 .button1 {
@@ -119,7 +114,7 @@ p {
 }
 
 h4 {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 5px;
     text-align: center;
     font-size: 24px;
@@ -135,6 +130,7 @@ h4 {
     padding: 18px;
     margin: auto;
     margin-bottom: 100px;
+    margin-top: 20px;
     
 }
 
@@ -146,36 +142,32 @@ input {
 .fname {
     padding-bottom: 10px;
 }
-
 .lname {
     padding-bottom: 10px;
 }
-
 .email {
     padding-bottom: 10px;
 }
-
 .message {
     padding-bottom: 10px;
 }
-
 .button {
     padding-top: 15px;
 }
 
 .mapbox {
     background-color: rgb(152, 137, 207);
+    align-content: center;
 }
 .map {
-    background-color: rgb(152, 137, 207);
-    text-align: center;
     align-content: center;
-    padding: 75px; 
-    width: 80%;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
 }
 
 .fab {
-    width: 80px;
+    width: 60px;
     font-size: 50px;
     color: rgb(128, 128, 128);
     text-align: center;
@@ -195,50 +187,92 @@ h5 {
     text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
-   h2 {
-       margin-left: 200px;
-   }
-   .outer {
-       flex-direction: row;
-       justify-content: center;
-   }
-   .row {
-       flex-direction: column;
-       max-height: 100px;
-   }
-   .map {
-       width: 86%;
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .outer {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .flex-item {
+        max-width: 220px;
+        padding: 10px;
+        flex-direction: column;
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+    .map {
+        width: 700px;
+        height: 400px;
+    }
+    .logo {
+        width: 500px;
+    }
+    h1 {
+        font-size: 120px;
+        margin-top: 30px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-top: -50px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    a {
+        font-size: 20px;
+    }
+    .form {
+        margin-top: 40px;
     }
 }
 
-@media screen and (min-width: 1500px) {
-   .kitpic {
-       max-width: 500px;
-   }
-   .flex-item {
-       font-size: 20px;
-       text-align: center;
-   }
-   .outer {
-       margin-left: 0;
-   }
-   .map {
-       width: 180%;
-   }
-   .form { 
-       width: 600px;
-       background-color: white;
-       margin-right: 150px;
-   }
-   input {
-       width: 600px;
-   }
-   .contact {
-       display: flex;
-       background-color: rgb(152, 137, 207);
-   }
-   h2 {
-       margin-left: 520px;
-   }
+@media screen and (min-width: 1000px) { 
+    .outer {
+        flex-direction: row;
+        margin-bottom: 50;
+    }
+    .flex-item {
+        max-width: 400px;
+        padding: 20px;
+    }
+    .map {
+        width: 800px;
+        height: 500px;
+        padding: 50px;
+    }
+    .form { 
+        width: 600px;
+        background-color: white;
+        margin-right: 150px;
+        margin-top: 60px;
+    }
+    input {
+        width: 500px;
+    }
+    .contact {
+        display: flex;
+        background-color: rgb(152, 137, 207);
+    }
+    h4 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .logo {
+        width: 600px;
+    }
+    h1 {
+        font-size: 140px;
+        margin-top: 30px;
+    }
+    h2 {
+        font-size: 28px;
+        margin-top: -50px;
+    }
+    a {
+        font-size: 28px;
+    }
+    .socials {
+        margin-top: 50px;
+    }
 }
