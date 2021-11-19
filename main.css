@@ -275,4 +275,7 @@ h5 {
     .socials {
         margin-top: 50px;
     }
+    .map {
+        width: 600px;
+    }
 }
